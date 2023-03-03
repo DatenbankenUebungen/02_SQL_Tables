@@ -63,3 +63,5 @@ DESCRIBE coworkers;
 # Sortiere die Tabelle coworkers nach den Werten in age
 SELECT * FROM coworkers
 ORDER BY age;
+
+SELECT * FROM coworkers WHERE location = "pool";
