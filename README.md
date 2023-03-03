@@ -1,2 +1,3 @@
 # 02_SQL_Tables
-**test** *kursiv*
+
+Beispiel SQL-Datei
