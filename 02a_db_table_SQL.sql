@@ -70,4 +70,12 @@ ORDER BY age;
 SELECT * FROM coworkers WHERE location = "pool";
 
 # Inhalte sortieren
-SELECT firstName, location FROM coworkers;
+SELECT 
+    firstName AS "Name", 
+    location AS "Ort",
+    age AS "Alter"
+FROM coworkers
+WHERE age > 35 OR location = "office"
+ORDER BY age DESC
+LIMIT 1
+;
