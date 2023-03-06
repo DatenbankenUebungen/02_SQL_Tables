@@ -35,17 +35,19 @@ CREATE TABLE IF NOT EXISTS coworkers
     computer VARCHAR(20)
 );
 
+# Zeige alle Tabellen in der aktuellen Datenbank an
 SHOW TABLES;
 
 # Befülle die Tabelle mit Werten
 INSERT INTO coworkers (firstName, location, age, computer)
 VALUES
-    ("Markus", "coffin", "150", "Smartphone"),
+    ("Markus", "starbucks", "21", "Notebook"),
     ("Juergen", "home", "25", "PC"),
     ("Hans", "office", "35", "PC"),
     ("Peter", "pool", "40", "Tablet"),
     ("Bama", "airport", "52", "Notebook");
 
+# Zeige alle Inhalte der Tabelle coworkers an
 SELECT * FROM coworkers;
 
 INSERT INTO coworkers (firstName, location, age, computer)
@@ -54,14 +56,18 @@ VALUES
     ("Gani", "pool", 36, "iPad"),
     ("Sohrab", "bed", 26, "Mac");
     
-# Zeige alle Inhalte der Tabelle coworkers an
+
 SELECT * FROM coworkers;
 
-# Zeigt die Beschreibung der Tabelle coworkers an
+# Zeigt die Struktur der Tabelle coworkers an
 DESCRIBE coworkers;
 
 # Sortiere die Tabelle coworkers nach den Werten in age
 SELECT * FROM coworkers
 ORDER BY age;
 
+# Inhalte der Tabelle coworkers Filtern
 SELECT * FROM coworkers WHERE location = "pool";
+
+# Inhalte sortieren
+SELECT firstName, location FROM coworkers;
